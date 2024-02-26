@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Cascade</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="outer-box" class="box">
+    <div class="box">
+      <p>Yellow Text</p>
+      <div class="box inner-box">
+        <p class="white-text">White Text</p>
+      </div>
+    </div>
+    <div class="box">
+      <p>Yellow Text</p>
+      <div class="box inner-box">
+        <p class="white-text">White Text</p>
+      </div>
+    </div>
+  </div>
+
+  <h4>
+    <i>Cascading</i> Style Sheet:  
+      <ul>
+    hierarchichal order
+    <br>only relevant when conflicting css rules
+    <br>which rules get applied, and which get ignored
+      </ul>  
+      <ol>
+        <li>External stylesheet (site specific)</li>
+        <li>Internal - via style block (page specific)</li>
+        <li>Inline - via style tag (very specific)</li>
+      </ol>
+    </h4>
+    <h4>
+      <ol>
+        <li>Position
+          <ul>
+            <li>the one in the lowest position</li>
+            <li>li {color: blue;<br> color: red;}  <-- red will "win"</li>
+          </ul>
+        </li>
+        <li>Specificity
+            <ul>
+              <li>the selector with the highest specificity will value will "win"</li>
+              <li>ie. From General to Most Specific:
+                <ol>
+                  <li>ELEMENT: li {color: blue;}</li>
+                  <li>CLASS .first-class {color: red;}</li>
+                  <li>ATTRIBUTE: li [draggable]{color:purple;}</li>
+                  <li>ID: #first-id {color: orange;}</li>
+                  <li>OR... use the keyword   color: green !important;  <-- will take precedence</li>
+                </ol>
+            </ul>
+        </li>
+        <li>Type</li>
+        <li>Importance</li>
+      </ol>
+    </h4>
+
+
+  </body>
+
+</html>

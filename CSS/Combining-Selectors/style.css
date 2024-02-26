@@ -1,0 +1,31 @@
+/* Write your code here: 
+.big   class
+#title id
+*/
+
+h1, h2 {
+    color: blueviolet;
+}
+
+ .box > p  {    /* find child p tag of .box */               
+    color: firebrick;  /*can match to a child, grandchild, and so on */
+}
+
+/* descendant = apply to a descendent of left side */
+
+.box li {
+    color: blue;
+}
+
+/* chaining  - find li elements with done class*/
+li.done {
+    color: seagreen;
+}
+
+/*Combining Combiners...wtf...css inception!?!?! */
+
+ul p.done {
+    font-size: 0.5rem;
+}
+
+
