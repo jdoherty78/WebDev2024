@@ -1,0 +1,48 @@
+Media Queries
+
+@media (max-width: 600px) {   /* @media replaces selector, anything less than or equal to 600px then use this style */
+	h1 {
+	  font-size: 15px;
+	}
+}
+
+***********************************************************************************************
+
+div {
+  background-color: blue;
+  height: 200px;
+  width: 200px;
+}
+
+@media (max-width: 600px) {   /* 600px or smaller */
+	div {
+	height: 100px;
+	width: 100px;
+	}
+}
+
+*************************************************************************************************
+@media (min-width: 600px) {    /* 600 px or greater, apply this styling */
+	h1 {
+	font-size: 15px;
+	}
+}
+
+*******************************************************************************************
+
+COMBINE:
+
+@media (min-width: 600px) and (max-width: 900px) {    
+	/* Styles for screens between 600px and 900px */
+}
+
+********************************************************************************************
+
+DEVICE:
+
+@media screen (orientation: landscape) {
+	/* Styles for landscape orientation */
+}
+
+
+
