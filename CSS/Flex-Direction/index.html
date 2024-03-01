@@ -8,26 +8,42 @@
   <!-- HINT:
   https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors
   https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators 
+
+Flex Direction:
+html default flow -- items layed out inline, until no more space
+blocked --  stack one on top of the other, top to bottom
+flexbox - items contained get put into a row, from left to right, 
+        - property of Flex direction, by default, is set to row..the next item is stacked horizontally,
+        - flex-direction: row; -- setting the cross axis perpendicular to the main axis
+        - flex-direction: column; -- items inside container, go top to bottom,
+                                  -- thereby changing the main axis to top-to-bottom
+                                  -- cross-axis is now  horizontal
+        - flex-basis: 100px;  --- sets the height or a column, or the width of a row, dependant on the direction of the main axis
+
   -->
   <style>
     .container {
       color: white;
       border: 5px solid gold;
-      display: flex;
+      display: inline-flex;   /* use inline-flex to make container same size as content */
+      flex-direction: column;
+      /* width: 10%; */
     }
 
-    /*
-Select all the elements that are the direct
-children of the .container class.
-    */
 
-    .red {background-color: #eb4d4b;}
+    .red {background-color: #eb4d4b; } 
     .orange {background-color: #f0932b;}
     .yellow {background-color: #f6e58d;}
     .green {background-color: #6ab04c;}
-    .blue {background-color: #4834d4;}
-    .indigo {background-color: #30336b;}
-    .purple {background-color: #be2edd;}
+    .blue {background-color: #4834d4; }
+    .indigo {background-color: #30336b; }
+    .purple {background-color: #be2edd; }
+
+  .container > div {
+    flex-basis: 100px; /* flex-basis applied on child tag, not intended for parent */
+  /* Select all the elements that are the direct children of the .container class. */
+  }
+
   </style>
 </head>
 

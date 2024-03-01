@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+  <style>
+    .container {
+      color: white;
+      border: 5px solid gold;
+      display: flex;   /* use inline-flex to make container same size as content */
+      flex-wrap: wrap; /* flex-direction: column; */
+      /* width: 10%; */
+      justify-content: center; 
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;  /* requries flex-wrap: wrap */
+      height: 70vh;    /* viewport height */
+    }
+/*
+The order attribute defaults to 0.
+Changing the order value, will change the order the elements are displayed.
+*/
+
+/*
+Flexwrap - 
+
+*/
+
+
+    .red {background-color: #eb4d4b; } 
+    .orange {background-color: #f0932b;}
+    .yellow {background-color: #f6e58d;}
+    .green {background-color: #6ab04c;}
+    .blue {background-color: #4834d4;}
+    .indigo {background-color: #30336b;}
+    .violet {background-color: #be2edd;}
+
+   .container > div {
+    flex-basis: 98%; 
+  /* flex-basis applied on child tag, not intended for parent */
+  /* Select all the elements that are the direct children of the .container class. */
+  }
+
+  </style>
+
+
+
+
+
+
+</head>
+<body>
+    <div class="container">
+      <div class="red">Red</div>
+      <div class="orange">Orange</div>
+      <div class="yellow">Yellow</div>
+      <div class="green">Green</div>
+      <div class="blue">Blue</div>
+      <div class="indigo">Indigo</div>
+      <div class="violet">Violet</div>
+    </div>
+    
+  </body>
+</html>
