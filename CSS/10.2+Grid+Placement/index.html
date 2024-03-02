@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+.container {
+    height: 100vh;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: aquamarine;
+}
+.cowboy {
+    background-color: #00B9FF;
+    grid-column: span 2;
+    order: 2;
+}
+.astronaut {
+    background-color: #03989E;
+    order: 1;
+}
+.book {
+    background-color: #009411;
+    order: 2;
+}
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item cowboy">🤠</div>
+        <div class="item astronaut">👨‍🚀</div>
+        <div class="item book">📖</div>
+        
+    </div>
+    
+
+
+</body>
+</html>
