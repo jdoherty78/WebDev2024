@@ -1,0 +1,96 @@
+https://appbrewery.github.io/bootstrap-layout/
+
+12 Column System
+
+<div class="container">                     	1
+  <div class="row">				2
+    <div class="col">Hello</div>		3
+  </div>
+</div>
+
+Auto Fit:
+col col col col col col
+ col  	col    	col
+
+BootStrap Container:
+.container (changes size based on screen size)
+
+.container-sm == small
+.container-md == medium
+.container-lg == large
+xl, xxl, fluid (100%),
+
+https://getbootstrap.com/docs/5.0/layout/breakpoints/
+
+extra-small
+small                           mobile
+medium				ipad
+large				laptop
+extra large			desktop
+extra extra large		tv
+
+Sized Columns:
+col-2  col-4  col-6
+col-2  col-10
+--12 columns total, divided as needed
+
+
+
+1)
+
+https://appbrewery.github.io/bootstrap-layout/
+
+<!-- Modify the HTML code for the purple boxes below so it behaves like the green ones. -->
+  <div class="row">
+    <div class="col-xl-6 col-sm-12">50% desktop, 100% mobile</div>
+    <div class="col-xl-6 col-sm-12">50% desktop, 100% mobile</div>
+  </div>
+
+bootstrap break point is "col-xl-6"
+--anything above the xl breakpoint of >1200px, should be 50%
+
+
+
+2)
+
+  <!-- Modify the HTML below to make the blue boxes behave like the red ones. -->
+  <div class="row">
+    <div class="">Column 1</div>
+    <div class="">Column 2</div>
+    <div class="">Column 3</div>
+  </div>
+
+  <!-- Modify the HTML below to make the blue boxes behave like the red ones. -->
+  <div class="row">
+    <div class="col-lg-6 col-sm-12 col-10">Column 1</div>
+    <div class="col-lg-3 col-sm-6  col-10">Column 2</div>
+    <div class="col-lg-3 col-sm-6  col-10">Column 3</div>
+  </div>
+
+
+
+3)
+
+      <!-- Modify the HTML below to make the indigo boxes behave like the blue ones. -->
+      <div class="row">
+        <div class="">Column 1</div>
+        <div class="">Column 2</div>
+      </div>
+
+      <!-- Modify the HTML below to make the indigo boxes behave like the blue ones. -->
+      <div class="row">
+        <div class="col-xxl-1 col-xl-2 col-lg-4 col-md-6">Column 1</div>
+        <div class="col-xxl-11 col-xl-10 col-lg-8 col-md-6">Column 2</div>
+      </div>
+
+--the col-xxl-1 tells the page how to be layedout when viewed on a particular screen size,
+how many of the 12 columns available should the element take up
+
+***Breakpoints
+Breakpoint		Class infix	Dimensions
+X-Small			None		<576px
+Small			sm		≥576px
+Medium			md		≥768px
+Large			lg		≥992px
+Extra large		xl		≥1200px
+Extra extra large	xxl	≥1400px
