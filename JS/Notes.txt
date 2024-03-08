@@ -1,0 +1,29 @@
+Brendan Eich - created JS in 10 days
+-originally livescript, 
+-MS turned it into jscript,
+-EU ecmascript,
+
+Interpreted:
+-javascript
+-python
+-ruby
+
+Compiled:
+-java (android)
+-c/c++
+-swift (IOS)
+
+JavaScript
+-only language supported on all major browsers
+
+
+Chrome JavaScript Console:
+-ctrl + shift + i
+
+-Chrome, settings, More Tools, Developer Tools, Select Console 
+- use shift + enter to enter multi line code
+
+TEST:
+
+alert ( 'Hello World!' )  
+

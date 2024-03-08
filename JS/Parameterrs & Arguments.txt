@@ -1,0 +1,203 @@
+Parameters & Arguments:
+
+function getMilk(bottles) {
+    console.log("leaveHouse");
+    console.log("moveRight");
+    console.log("moveRight");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveRight");
+    console.log("moveRight");
+    console.log("buy " + bottles + " Milk");
+    console.log("moveLeft");
+    console.log("moveLeft");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveLeft");
+    console.log("moveLeft");
+    console.log("enterHouse");
+}
+
+getMilk(12);
+
+***** need to allow to accept input
+**have function accept "# of bottles of milk"
+
+function getMilk (bottles) {
+    var cost = bottles * 1.5;
+    //Do something with cost
+    console.log(cost)
+
+}
+
+getMilk(12);
+
+***************************************************
+
+
+CHALLENGE:
+-calculate the number of bottles of milk we're able to buy given an amount of money
+
+getMilk(5);  // $1.5  5/1.5=3.33
+
+function getMilk(money) {
+    console.log("leaveHouse");
+    console.log("moveRight");
+    console.log("moveRight");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveRight");
+    console.log("moveRight");
+var numberofBottles = Math.floor(money / 1.5);   // round down to a whole number
+    console.log("buy " + numberofBottles + " Milk");
+    console.log("moveLeft");
+    console.log("moveLeft");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveLeft");
+    console.log("moveLeft");
+    console.log("enterHouse");
+}
+
+
+
+getMilk(5);  // 5 gets bound to the word money
+
+*****************************************************************
+
+LIFE WEEKS IN CODING EXERCISE
+-create a function that tells us how many days, weeks and months we have left if we live until 90 years old
+-take current age as i nput, and console.logs a message with out time left in the following format:
+	You have x days, y weeks, and z months left.
+
+-assume there are 365 days in a year, 52 weeks, and 12 months
+
+totalYears = 90;
+totalWeeks = 90 * 52;
+totalDays = 90 * 365;
+
+let currentAge = prompt("Please enter your age: ");
+days = totalDays - (currentAge * 365);
+weeks = totalWeeks - (currentAge * 52);
+years = totalYears - (currentAge);
+
+console.log("You have " + days + " days, " + weeks + " weeks, and " + years + " years left.");
+
+
+****
+
+SOLUTION:
+
+function lifeInWeeks(age) {
+    var yearsRemaining = 90 - age;
+    var days = yearsRemaining * 365;
+    var weeks = yearsRemaining * 52;
+    var months = yearsRemaining * 12;
+
+    console.log("You have " + days + " days, " +  weeks + " weeks, and " + months + " months left.");
+
+}
+
+lifeInWeeks(45);
+
+**********************************************************************************************
+
+OUTPUTS & RETURN VALUES:
+-
+
+function getMilk(money) {
+    console.log("leaveHouse");
+    console.log("moveRight");
+    console.log("moveRight");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveRight");
+    console.log("moveRight");
+var numberofBottles = Math.floor(money / 1.5);   // round down to a whole number
+    console.log("buy " + numberofBottles + " Milk");
+    console.log("moveLeft");
+    console.log("moveLeft");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveLeft");
+    console.log("moveLeft");
+    console.log("enterHouse");
+    return money % 1.5;             // take 'money' as input, and produce output, we're giving output of how much money is left
+    console.log(money);
+}
+
+
+
+getMilk(5);
+
+
+-input: money $5
+-output: money $0.50
+
+var change = getMilk(4)
+// change = 1
+
+function getMilk (money) {
+  return money % 1.5;
+}
+
+
+
+********************************************************************
+
+function getMilk(money, costPerBottle) {
+    console.log("leaveHouse");
+    console.log("moveRight");
+    console.log("moveRight");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveRight");
+    console.log("moveRight");
+
+    console.log("buy " + calcBottles(money, costPerBottle) + " bottles of milk");
+
+    console.log("moveLeft");
+    console.log("moveLeft");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveLeft");
+    console.log("moveLeft");
+    console.log("enterHouse");
+    return calcChange(money, costPerBottle)
+
+}
+
+function calcBottles(startingMoney, costPerBottle) {
+
+  var numberOfBottles = Math.floor(startingMoney / costPerBottle);
+  return numberOfBottles;
+
+}
+
+function calcChange(startingAmount, costPerBottle) {
+    var change = startingAmount % costPerBottle;
+    return change;
+}
+
+console.log("Hello master, here is your " + getMilk(5, 2.5) + " change.");
+
+*********************************************************************
+
+
+

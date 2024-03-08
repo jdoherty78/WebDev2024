@@ -1,0 +1,119 @@
+FUNCTIONS:
+
+example.
+alert("leaveHouse");
+alert("moveRight");
+alert("moveRight");
+alert("moveUp");
+alert("moveUp");
+alert("moveUp");
+alert("moveLeft");
+alert("moveDown");
+alert("enterHouse");
+
+CREATE:
+function getMilk() {
+    console.log("leaveHouse");
+    console.log("moveRight");
+    console.log("moveRight");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveRight");
+    console.log("moveRight");
+    console.log("buy" + bottles + "Milk");
+    console.log("moveLeft");
+    console.log("moveLeft");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveLeft");
+    console.log("moveLeft");
+    console.log("enterHouse");
+}
+
+getMilk();
+
+
+**********************************************************************************
+Karel the Robot:
+
+stanford.edu/~cpiech/karel/ide.html
+-change world to 5x5
+-write code in function main();
+--executed when run selected
+************************************************************************************
+/**
+ * Welcome to the Stanford Karel IDE.
+ * This is a free space for you to 
+ * write any Karel program you want.
+ **/
+function main(){
+   //your code here
+putBeeper();
+diagMoveBeeper();
+diagMoveBeeper();
+diagMoveBeeper();
+diagMoveBeeper();
+}
+
+function diagMoveBeeper() {
+move();
+turnLeft();
+move();
+putBeeper();
+turnRight();
+}
+
+***********************************************************
+
+CHECKERBOARD:
+function main(){
+   beepersRight();
+   goUpTurnLeft();
+   beepersLeft();
+   goUpTurnRight();
+      beepersRight();
+   goUpTurnLeft();
+   beepersLeft();
+   goUpTurnRight();
+      beepersRight();
+}
+ 
+function goUpTurnRight() {
+   turnRight();
+   move();
+   turnRight();
+}
+ 
+function goUpTurnLeft() {
+   turnLeft();
+   move();
+   turnLeft();
+}
+ 
+function beepersRight() {
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+   move();
+   move();
+   putBeeper();  
+}
+ 
+function beepersLeft() {
+   move();
+   putBeeper();
+   move();
+   move();
+   putBeeper();
+   move();
+}
+*************************************************************************
+
+
+
+

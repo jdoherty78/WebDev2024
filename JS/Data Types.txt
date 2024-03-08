@@ -1,0 +1,201 @@
+JavaScript Data Types:
+
+boolean, string, number, etc.
+
+VARIABLES:
+
+var myName = "Angela";
+
+var = keyword
+myName = variable name
+assigned to string Angela
+
+alert(myName)
+
+
+*************************************************************************
+STRINGS:
+
+CONCATENATION:
+"A" + "b"
+'Ab'
+
+alert('Hello' + ' World!')
+
+alert('Hello' + ' ' + 'World')
+
+
+var message =  "Hello"
+var name = "Joe"
+
+alert(message + " " + name)
+
+****************************************************************
+
+
+LENGTH:
+word.length -- get number of characters inside the 'word'
+
+var myName = "Angela"
+var yourName = "joezors"
+
+myName.length;
+6
+
+yourName.length;
+7
+
+***************************************************************************
+
+TWITTER CHARACTER COUNT:
+-write javascript to create a prompt, where user can enter a large string, and tell them how many characters they've written and have remaining out of 140 or 280 characters
+
+//  this is a single line comment
+/* multi line comment */
+
+
+var tweet = prompt("Compose your tweet:");
+var tweetCount = tweet.length;
+alert("You have written " + tweetCount + " characters, you have " + (140 - tweetCount) + " characters remaining.");
+
+
+***************************************************
+var yourName = prompt("What is your name?");
+
+yourName
+'Coolio'
+
+***************************************************
+
+alert("My name is " + myName + ", welcome to my course " + yourName + "!");
+
+**************************************************
+
+NAMING and NAMING CONVENTIONS:
+
+*can't use keywords to name variables
+*can't contain spaces
+*camel case - start with lowercase word, subsequent words are capitalized
+
+
+
+****************************************************************
+
+SLICES:
+slice(x,y)   start,end
+
+-slice strings into individual characters
+
+var name = "Angela";
+name.slice(0,1);  // starting at position 0, up to position 1
+'A'               // A is position 0
+
+name.slice(5,6);
+'a'
+
+name.slice(1,4);
+'nge'
+
+CHALLENGE:
+
+var tweet = prompt("Compose your tweet:");
+var tweetUnder140 = tweet.slice(0,140);
+alert(tweetUnder140)
+
+ or...in 1 line...
+
+alert(prompt("Compose your tweet:").slice(0,140));
+
+
+CHANGING CASE:
+
+word.toUpperCase()
+
+var name = "Angela"
+name.toUpperCase();
+'ANGELA'
+*****************************************
+var name = "Angela"
+name = name.toUpperCase();
+****************************************
+var name = "Angela"
+name = name.toUpperCase();
+console.log(name);
+name = name.toLocaleLowerCase();
+
+'ANGELA'
+'angela'
+
+*****************************************
+
+CHALLENGE:
+-change to titleCase
+
+var name = prompt('What is your name?');
+name = name.toLowerCase().split(' ').map(name => name.charAt(0).toUpperCase() + name.substring(1)).join(' ');
+alert("Hello, " + name);
+
+
+ALTERNATIVE:
+
+var name = prompt('What is your name?');
+var firstChar = name.slice(0,1);
+var upperCaseFirstChar = firstChar.toUpperCase();
+var restOfName = name.slice(1,name.length);
+restOfName = restOfName.toLowerCase();
+var capitalisedName = upperCaseFirstChar + restOfName;
+
+alert("Hello, " + capitalisedName);
+
+*****************************************************
+
+NUMBERS:
+
+var a = 2 + 3;
+var b = 10 - 6;
+var c = 3 * 4;
+var d = 6 / 2;
+var e = 9 % 6;  // modulo - % - display the remainder
+
+12 % 8 = 4
+-useful to determine odd/even numbers
+if % is 0 = even
+
+var cost = 3 + 5 * 2
+console.log(cost)
+13
+
+var cost =  (3 + 5) * 2
+console.log(cost)
+16
+
+*****************************************************
+CHALLENGE:
+-dog age to human age converter
+
+humanAge = (dogAge - 2) X 4 + 21
+-----------------------------------------------------
+var dogAge = prompt('What is age of your dog?');
+var humanAge = (dogAge -2) * 4 + 21;
+
+alert("Your dog is " + humanAge + " years old in human years.");
+
+******************************************************
+
+INCREMENT & DECREMENT EXPRESSIONS:
+
+var x = 5;
+x = x + 1;  // == x++;
+
+x++; // increment by 1   
+x--; // decrement by 1
+
+x += 2; // increment by 2
+x -= 2; // decrement by 22
+
+var x = 5;
+var y = 3;
+x += y; //8
+
+
+
