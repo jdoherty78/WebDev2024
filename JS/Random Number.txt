@@ -1,0 +1,62 @@
+Random Number Generation
+Love Calculator...wtf...
+
+-is a 16 decimal place number
+-between 0 - .99999999999999999999
+-generates up to 1 billion random numbers
+
+
+var n = Math.random();  // creates floating point, pseudo-random, scale to desired range
+0.3647382746318429
+
+n = n * 6
+2.18842964779
+
+n = Math.floor(n);  // round down to nearest whole number
+2
+
+************************************************************
+
+
+var n = Math.random();
+n = n * 6;  // scale to desired range , 6 sided dice
+console.log(n);
+
+********************
+var n = Math.random();
+n = n * 6;
+n = Math.floor(n);   // round down to whole number, but we never get a 6...
+console.log(n);
+
+*********************
+// this is pseudo-random, the pattern will repeat at some point, not 100% random, 
+
+
+var n = Math.random();
+n = n * 6;
+n = Math.floor(n) + 1;  // now we can get a 6
+console.log(n);
+
+*************************
+
+1) create a variable with Math.random(), 
+2) scale it to desired range , multiply by upper bound of range 
+3) use Math.floor(); to round down to a whole number, + 1 to generate numbers between 1 and 6
+
+
+**********************************************************************************************
+Love Calculator
+-enter 2 names
+-return a number between 0-100%
+
+-have 2 prompts to ask for names of people
+-then calculate a random number that is a percentage
+-then give info back to user in form of an alert, this is their love score
+
+
+prompt("What is your name?")
+prompt("What is your name?");
+
+var loveScore = Math.random() * 100;
+loveScore = Math.floor(loveScore) + 1;
+alert("Your love score is " + loveScore + "%")

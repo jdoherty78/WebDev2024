@@ -1,0 +1,98 @@
+CONDITIONALS:
+
+
+if (track === "clear") {
+  goStraight();
+} else {
+  turnRight();
+}
+
+********************************
+var loveScore = Math.random() * 100;
+loveScore = Math.floor(loveScore) + 1;
+
+if (loveScore === 100) {
+    alert("Your love score is " + loveScore + "%" + "You love each other like Kanye loves Kanye.");
+} else {
+    alert("Your love score is " + loveScore + "%");
+}
+
+*********************************
+
+var loveScore = Math.random() * 100;
+loveScore = Math.floor(loveScore) + 1;
+
+if (loveScore > 70) {
+    alert("Your love score is " + loveScore + "%" + "You love each other like Kanye loves Kanye.");
+} else {
+    alert("Your love score is " + loveScore + "%");
+}
+
+**********************************
+
+
+COMPARATORS and EQUALITY
+
+=== is equal to, also checks data types match
+!== not equal to
+==    also checks for equality, does not check data types
+
+> greater than
+< less than
+>= greater than or equal
+<= less than or  equal
+
+
+var a = 1
+var b = "1"
+
+if (a === b){       <-- check it!
+    console.log("yes");
+} else {
+    console.log("no");
+}
+no  <-- result
+
+
+var a = 1
+var b = "1"
+
+if (a == b){           <--- check the OR
+    console.log("yes");
+} else {
+    console.log("no");
+}
+yes  <-- result
+
+
+
+***********************************************************************************
+
+Combining Comparators:
+prompt("What is your name?")
+prompt("What is their name?")
+
+var loveScore = Math.random() * 100;
+loveScore = Math.floor(loveScore) + 1;
+
+if (loveScore > 70) {
+  alert("Your love score is " + loveScore + "%" + "You love each other like Kanye loves Kanye.");
+} 
+
+if (loveScore > 30 && <= 70) {
+
+  else {
+  alert("Your love score is " + loveScore + "%");
+}
+
+if (loveScore <= 30) {
+  alert("Your love score is " + loveScore + "%" + "You go together like oil and water.");
+}
+
+
+
+
+&& AND
+|| OR
+!  NOT
+

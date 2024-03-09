@@ -1,0 +1,43 @@
+ARRAYS:
+-a collection of items
+-stored into same container
+
+var eggs = [a, 12, bob, ten, 99, fart, box, 77]
+
+
+"Angela"
+"Jack"
+"Pam"
+"James"
+"Lara"
+"Jason"
+
+if guestName = "Angela" {
+  alert("Welcome!");
+} else if guestName = "Jack" {
+  alert("Welcome!");
+}
+
+var a = "Angela"
+var b = 123;
+
+*************************************************
+
+var guestList = ["Angela",
+"Jack",
+"Pam",
+"James",
+"Lara",
+"Jason"];
+
+************************************************
+
+fizzbuzz..
+
+for (i=1; i<=100;i=i+1) {
+    if i === 3 {
+        console.log("Fizz");
+    } else {
+    console.log(i);
+    }
+}
