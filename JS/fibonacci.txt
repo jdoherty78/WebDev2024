@@ -1,0 +1,49 @@
+Fibonacci Exercise:
+
+-1,2,2,3,4,5,8,13,21,34,55,89,144
+
+--adding the 2 previous numbers
+--create a function
+
+fibonacciGenerator(n)
+--where n is the number of sequences
+
+--use array as output
+-first two numbers are 0 and 1
+-
+
+for loop -- var i = 0, 
+
+
+fibonacciGenerator(number) {
+
+    0 1 1 2 3
+
+}
+
+*******************************************************
+
+function fibonacciGenerator (n) {
+
+var output = [];
+
+if (n === 1) {
+  output = [0];
+}
+ else if (n === 2) {
+    output = [0,1];
+}
+else {
+    output = [0,1];
+
+    for (var i = 2; i < n; i++){
+          output.push(output[output.length - 2] + output[output.length - 1]); //1
+
+	}
+
+
+  }
+
+return output;
+
+}
