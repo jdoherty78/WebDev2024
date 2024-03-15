@@ -1,0 +1,9 @@
+DOM: document object model
+
+https://www.w3schools.com/js/js_htmldom.asp
+
+-allows JavaScript to create dynamic HTML
+-catalogues web page into individual objects, that can be manipulated
+-converting the page into the DOM is done by the browser, into a tree structure
+
+

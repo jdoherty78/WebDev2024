@@ -1,0 +1,5 @@
+Adding Javascript to Websites:
+
+inline  =  <body onload="alert('Hello')"> </body>
+internal = <script type="text/javascript">  javascript js javascript js</script>
+external = <script src="./index.js"> </script>  -- link at bottom of page, not in  <head>

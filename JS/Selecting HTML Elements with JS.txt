@@ -1,0 +1,20 @@
+Selecting HTML Elements with JS:
+
+-chrome, more tools, developer tools, console
+
+document.getElementsByTagName("li")[2].style.color="purple"; <-- plural 'Elements' results in an array
+'purple'
+
+document.getElementsByTagName("li").length;
+3
+
+document.querySelector("li a").style.color="red";
+'red'
+
+
+
+HTML - content
+CSS - style
+JS - behavior
+
+ 

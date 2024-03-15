@@ -18,5 +18,5 @@ function fibonacciGenerator (n) {
     return output; 
     }
     
-    output = fibonacciGenerator(5);
+    output = fibonacciGenerator(9);
     console.log(output)
