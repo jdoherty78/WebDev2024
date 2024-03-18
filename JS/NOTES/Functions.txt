@@ -115,5 +115,86 @@ function beepersLeft() {
 *************************************************************************
 
 
+Higher Order Function
+ie.   addEventListener is higher order function, able to take another function as input
 
+document.addEventListener("keypress", respondToKey(event));
+
+function respondToKey(event) {
+  console.log("Key pressed.");
+}
+
+
+
+Callback Function
+
+-functin passed in as an input
+-allows to wait for something to finishing happening, then the callback function
+gets called and executed
+
+
+document.addEventListener("keypress", respondToKey(event));
+
+function respondToKey(event) {
+  console.log("Key pressed.");
+}
+
+
+wiki javascript
+-inspect h1 title
+
+
+$0.addEventListener("click", function() {
+  console.log(event);
+});
+
+
+---the same as---
+
+$0.addEventListener("click", function(e) {
+  console.log(e);
+});
+
+*****************************************************
+
+function sayHi(to) {
+  console.log("Hello, " + to);
+}
+
+sayHi("Joe");
+  Hello, Joe
+
+
+function sayHi(name) {
+  console.log("Hello, " + name);
+}
+
+sayHi("Tom!")
+ Hello, Tom!
+
+
+**********************************************
+
+-when an event does happen, it will create an event object
+-we're calling that eventThatHappened in the example
+-the event object will capture a number of characteristics about that event
+-
+
+
+function anotherAddEventListener(typeOfEvent, callback) {
+  // Detect Event Code ...
+
+var eventThatHappened = {
+  eventType: "keydown",
+  key: "p",
+  durationOfKeydown: 2
+  }
+if (eventThatHappened.eventType === typeOfEvent) {
+  callback(eventThatHappened);
+  }
+}
+
+anotherAddEventListener("keydown", function(event) {
+  console.log(event);
+});
 
