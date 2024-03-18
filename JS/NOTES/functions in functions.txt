@@ -1,0 +1,50 @@
+function add(num1, num2) {
+    return num1 + num2;
+}
+***************************************
+function multiply(num1, num2) {
+    return num1 * num2;
+}
+***************************************
+function calculator(num1, num2, operator) {
+    return operator(num1, num2);
+}
+***************************************
+calculator(2,3,add);
+5
+
+calculator(6,4,multiply);
+24
+
+
+--chrome , developer tools, debugger;
+
+
+
+Higher Order Functions
+-functions that take other functions as inputs
+
+
+-add, subtract, multiply, divide,
+
+
+
+function add(num1, num2) {
+return num1 + num2;
+}
+ 
+function subtract(num1, num2) {
+return num1 - num2;
+}
+ 
+function multiply(num1, num2) {
+return num1 * num2;
+}
+ 
+function divide(num1, num2) {
+return num1 / num2;
+}
+ 
+function calculator(num1, num2, operator) {
+return operator(num1, num2);
+}
