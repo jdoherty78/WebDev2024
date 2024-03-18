@@ -1,0 +1,4 @@
+ use keydown event listener
+-instead of keypress.....
+
+

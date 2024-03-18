@@ -1,0 +1,66 @@
+Methods:
+
+
+function moveSuitcase {
+  alert("May I take your suitcase?");
+  pickUpSuitcase();
+  move();
+}
+
+
+
+var BellBoy1 = {
+  name: "Timmy",
+  age:  19,
+  hasWorkPermit: true,
+  languages: ["French", "English"],
+  moveSuitcase: function() {
+   alert("May I take your suitcase?");
+   pickUpSuitcase();
+   move();
+  }
+}
+
+-now BellBoy1 has a method
+-a method is function associated with an object
+
+bellBoy1.moveSuitcase();
+
+**************************************************************
+
+CONSTRUCTOR FUNCTION:
+
+function BellBoy (name, age, hasWorkPermit, languages) {
+  this.name = name;
+  this.age = age;
+  this.hasWorkPermit = hasWorkPermit;
+  this.languages = languages;
+  this.moveSuitcase = function() {
+    alert("May I take your suitcae?");
+    pickUpSuitcase();
+    move();
+  }
+}
+
+***********************************************************
+
+add method to houseKeeper constructor function 
+--method clean()
+-sends an alert that says "cleaning in progess"
+
+
+function HouseKeeper (yearsOfExp, name, cleaningRepertoire) {
+  this.yearsOfExp = yearsOfExp;
+  this.name = name;
+  this.cleaningRepertoire = cleaningRepertoire;
+  this.clean = function () {                                         <-- anonymous function
+    alert("Cleaning in progress...");
+  }
+}
+
+
+var houseKeeper1 = new HouseKeeper(9, "joe", ["bathrooms", "kitchens"]);   <-- check the 'new' keyword
+houseKeepr1.clean();
+   alert!
+
+

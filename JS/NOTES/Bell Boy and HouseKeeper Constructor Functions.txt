@@ -1,0 +1,79 @@
+Bell Boy 1
+
+var bellBoy1Name = "Timmy";
+var bellBoy1Age = 19;
+var bellBoy1HasWorkPermit = true;
+var bellBoy1Languages = [
+  "French",
+  "English"
+]
+
+
+
+Bell Boy 2, and 3..
+-that's a lot of lines of code...
+-need to know the same properties for each bell boy
+
+create an OBJECT
+
+var bellBoy1 = {
+ name: "Timmy",
+ age: 19,
+ hasWorkPermit: true,
+ languages: ["French", "English"]
+}
+
+alert("Hello, my namne is " + bellBoy1.name )
+
+
+******************************
+
+-developer tools, Sources, index.js
+
+var houseKeeper1 = {
+  yearsOfExp: 12,
+  name: "Jane",
+  cleaningRepertoire: ["bathroom", "lobby", "bedroom"]
+}
+
+houseKeeper1.name;
+'Jane'
+
+**************************************
+
+-what if we need 3 bellboys, housekeeprs, 
+
+CONSTRUCTOR FUNCTION:
+-names have to be capitalized
+-inputs match the property names
+
+
+function BellBoy (name, age, hasWorkPermit, languages) {
+  this.name = name;
+  this.age = age;
+  this.hasWorkPermit = hasWorkPermit;
+  this.languages = languages;
+}
+
+
+CREATE AN OBJECDT (INITIALIZE):
+
+var BellBoy1 = new BellBoy ("Timmy", 19, true, [ "French", "English"]);
+
+
+
+
+--create constructor function for houseKeeper
+
+function HouseKeeper (yearsOfExp, name, cleaningRepertoire) {
+  this.yearsOfExp = yearsOfExp;
+  this.name = name;
+  this.cleaningRepertoire = cleaningRepertoire;
+}
+
+var houseKeeper1 = new HouseKeeper(9, "Joe", ["lobby", "bedroom"]);
+
+console.log(houseKeeper1.name);
+ Joe
+
+
