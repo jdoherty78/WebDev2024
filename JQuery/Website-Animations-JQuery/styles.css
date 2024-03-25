@@ -1,0 +1,11 @@
+/* appearance attriburtes */
+
+.margin-50 {
+    margin: 50px;
+}
+
+.big-title {
+    color: yellow;
+    font-size: 10rem;
+    font-family: cursive;
+}

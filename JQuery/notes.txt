@@ -1,0 +1,91 @@
+JS Libraries:
+-JQuery #1
+
+
+Pure JavaScript:
+
+for (i = 0; i < document.querySelectorAll("button").length; i++) {
+  document.querySelectorAll("button")[i].addEventListener("click", function() {
+  document.querySelector("h1").style.color = "red";
+  });
+}
+
+-searches entire document for all elements with selector "button"
+-adds eventlistener to detect for clicks, on button
+-when it is detected, run the callback function to look through the document and query for selector "h1"
+then change the style color to red 
+-using a for loop to traverse through all the buttons on the web page to add eventlistener and behavior
+
+vs
+
+John Resig:
+-created the library JQuery
+
+$("button").click(function() {
+  $("h1").css("color", "red");
+})
+
+
+****************************************************
+document.querySelector("h1") - JavaScript
+
+jQuery("h1) - JQuery
+or
+$("h1")  --even easier, shorter, etc.
+
+
+***************************************************
+
+
+Adding JQuery to websites:
+
+jquery.com 
+-download code files
+-or use cdn
+
+cdn = content delivery network
+--most popular option is to use Google's cdn
+--gets cached and saved in browser, often from other sites
+
+jQuery
+3.x snippet:
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+
+link css - between <head></head>
+<script> JavaScript - before closing body tag
+<script JQuery - directly before/above, JavaScript link
+               - putting link below/after JavaScript link borks
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery - v1.0</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<h1>Hello</h1>
+<button>Click Me</button>    
+<button>Click Me</button>    
+<button>Click Me</button>    
+<button>Click Me</button>    
+<button>Click Me</button>    
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="./index.js"></script>    
+</body>
+</html>
+
+******************************************************************************
+developer tools --> console
+
+$("h1").hasClass("margin-50");
+  true
+
+$("h1").removeClass("big-title");
+
+
